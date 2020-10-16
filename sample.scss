@@ -7,17 +7,10 @@
     width: 100%;
     margin: 0 auto;
     grid-template-columns: repeat(12, 1fr);
-    // grid-column-gap: 1em;
 }
 
 .container{
-    // padding: 0 5px;
     grid-column-gap: .5em;
-
-// padding-right: 5px;
-//   padding-left: 5px;
-//   margin-right: auto;
-//   margin-left: auto;
 }
 
 $columns : 12;
@@ -26,7 +19,6 @@ $columns : 12;
     .c-#{$i} {
         grid-column: span $i;
         display: flex;
-        // border: 1px solid blue;
     }
 }
 
@@ -58,20 +50,7 @@ $columns : 12;
     align-content: center;
 }
 
-
-// ul {
-//     margin-top: 0;
-//     margin-bottom: 0;
-//     margin-block-start: 0;
-//     padding-inline-start: 0;
-//     margin-block-end: 0;
-//     margin-inline-start: 0;
-//     margin-inline-end: 0;
-// }
-
-
 a {
-    // border: 1px solid black;
     margin: 0;
     padding: 0, 15px;
     text-decoration: none;
@@ -79,6 +58,9 @@ a {
 
 a:hover {text-decoration: underline; }
 
+a:visited{
+        color: #0b0080;
+}
 
 .space{
     margin-left: 4px;
@@ -101,6 +83,7 @@ img:hover {
 cursor: pointer;
 }
 
+
 //CSS
 
 #head{
@@ -110,7 +93,6 @@ cursor: pointer;
     width: 100%;
     height: 50px;
     z-index: -1;
-    // border: 1px solid black;
     background-color: white;
 }
 
@@ -165,7 +147,6 @@ body {
 #content-right{
     min-width: 557.22px;
     width: 100%;
-    // background-color: white;
 }
 
 #right-box{
@@ -200,11 +181,9 @@ i {
     width: 50px;
 }
 
-
 #search-box{
     border: none;
     width: 160px;
-    // height: 15px;
 }
 
 .search-icon{
@@ -226,38 +205,28 @@ i {
     height: 20px;
 }
 
-
-
-
 #nav-top-lower{
     margin-top: 15px
 }
 
 .mid-link{
- text-decoration: none;
+    text-decoration: none;
     padding: 0 5px;
-//  background-color: #EAF3F9;
-//  background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,#EAF3F9 100%);
-    // background-repeat: no-repeat;
-    // background-size: 1px 100%;
- border: 1px solid #a7d7f9;
- border-top: none;
- border-left: none;
-
- background-position: right bottom;
+    border: 1px solid #a7d7f9;
+    border-top: none;
+    border-left: none;
+    background-position: right bottom;
     color: #0645ad;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: flex;
-    // float: left;
     height: 3.07692308em;
     position: relative;
     padding-top: 1.25em;
     padding-left: 8px;
     padding-right: 8px;
     font-size: 12px;
-    // width: 150px;
     text-align: center;
     justify-content: center;
     overflow: hidden;
@@ -283,7 +252,6 @@ i {
 
 #read-nav{
     margin-left: auto;
-    // border-left: 1px solid #a7d7f9;
     width:50px;
     min-width: 50px;
     background-color: white;
@@ -309,8 +277,6 @@ i {
 
 #spacer{
     width: 100%;
-    
-    // border:1px solid black;
     border-right: 1px solid #a7d7f9;
     border-bottom: 1px solid #a7d7f9;
     background-image:linear-gradient(to bottom, white 0, #F6F6F6 100%);
@@ -349,8 +315,6 @@ margin: 16px;
     font-size: 14px;
 }
 
-
-
 #feat-article-cont{
     border: 1px solid #cef2e0;
     background: #f5fffa;
@@ -370,9 +334,6 @@ margin: 16px;
     text-align: right;
 }
 
-
-
-
 #news-article-cont{
 border: 1px solid #cedff2;
     background: #f5faff;
@@ -384,8 +345,7 @@ border: 1px solid #cedff2;
 }
 
 #news{
-        background: #cef2e0;
-        // background: blue;
+    background: #cef2e0;
     border-color: #a3bfb1;
 }
 
@@ -399,7 +359,6 @@ border: 1px solid #cedff2;
 
 #news-figure{
     float: right;
-    // border: 1px solid black;
     display: flex;
     flex-direction: column;
 }
@@ -409,38 +368,14 @@ border: 1px solid #cedff2;
 
 }
 
-
-
-
-
-
 #covid-box{
     border: 1px solid #ddd;
     background: white;
     padding: 5px;
     margin-bottom: 5px;
-    // display: flex;
-    // // align-content: center;
-    // justify-content: center;
     text-align: center;
 
 }
-
-
-
-// #on-this-day-article-cont{
-//     border: 1px solid #cef2e0;
-//     background: #f5fffa;
-// }
-
-// #on-this-day-article-title{
-//     background: #cedff2;
-//     border-color: #a3b0bf;
-// }
-
-// #on-this-day-article-rec-feat{
-//     text-align: right;
-// }
 
 
 #on-this-day{
@@ -461,7 +396,6 @@ border: 1px solid #cedff2;
 
 #on-this-day-figure{
     float: right;
-    // border: 1px solid black;
     display: flex;
     flex-direction: column;
 }
@@ -471,14 +405,7 @@ border: 1px solid #cedff2;
 
 }
 
-
-
-
-
-
-
 .article-title{
-    // font-size: 120%;
     font-size: 17px;
     font-weight: bold;
     margin: 8px;
@@ -495,9 +422,6 @@ border: 1px solid #cedff2;
     text-align: right;
 }
 
-
-
-
 .article-list{
 list-style-position: outside;
 margin-left: -10px;
@@ -505,19 +429,12 @@ margin-top: 5px;
 margin-bottom: 5px;
 }
 
-
-
-
-
-
-
 #did-you-know-cont{
     display: block;
 }
 
 #did-you-know-figure{
     float: right;
-    // border: 1px solid black;
     display: flex;
     flex-direction: column;
 }
@@ -536,11 +453,6 @@ margin-bottom: 5px;
     margin-bottom: 15px;
 }
 
-
-
-
-
-
 #today-articles{
     font-size: 14px;
 }
@@ -558,8 +470,7 @@ margin-bottom: 5px;
 }
 
 #today-img{
-    margin-left: 8px;
-    margin-right: 8px;
+    margin: 8px;
 }
 #today-figure{
     height: 100%;
@@ -738,6 +649,7 @@ margin-bottom: 5px;
 #button-cont{
     display: flex;
     justify-content: flex-end;
+    margin-top: 15px;
 }
 
 #power-button{
