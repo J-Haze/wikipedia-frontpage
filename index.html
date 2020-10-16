@@ -13,8 +13,9 @@
 <body>
 
     <div id="content">
+        <div id="head"></div>
         <div id="nav-left">
-            <img src="\assets\Wikipedia-Logo.jpg" id="main-logo" />
+            <img src="\assets\logo2.png" id="main-logo" />
             <div id="left-list-top" class="flex-down list left-list-subtitle">
                 <a href="" class="left-link">Main page</a>
                 <a href="" class="left-link">Contents</a>
@@ -124,6 +125,7 @@
         <div id="content-right">
             <div class="flex top-links">
                 <div id="nav-top-right" class="navbar">
+                    <img src="assets/icons/user.png" id="user-img" />
                     <div class="top-link"> Not logged in</div>
                     <a href="" class="top-link">Talk</a>
                     <a href="" class="top-link">Contributions</a>
@@ -135,11 +137,12 @@
             <div id="right-box">
 
                 <div id="nav-top-lower" class="flex">
-                    <a href="" class="mid-link">Main Page</a>
-                    <a href="" class="mid-link">Talk</a>
+                    <a href="" class="mid-link" id="main-page">Main Page</a>
+                    <a href="" class="mid-link" id="talk">Talk</a>
+                    <div id="spacer"></div>
                     <a href="" class="mid-link" id="read-nav">Read</a>
-                    <a href="" class="mid-link">View Source</a>
-                    <a href="" class="mid-link">View history</a>
+                    <a href="" class="mid-link" id="source">View Source</a>
+                    <a href="" class="mid-link" id="history">View history</a>
                     <div class="search flex">
                         <input placeholder="Search Wikipedia" id="search-box"> </input>
                         <i class="fa fa-search search-icon"></i>
@@ -281,43 +284,46 @@
                             </div>
                         </div>
 
-
-
-
-
                         <div id="news-article-cont" class="c-6 flex-down">
                             <div id="news-article-title" class="article-title">In the news</div>
                             <div id="news-cont" class="article">
-                                <div id="covid-box">COVID-19 pandemic: Disease &#xb7; Virus &#xb7; By location &#xb7;
-                                    Impact &#xb7;
-                                    Portal</div>
+                                <div id="covid-box"><a href="" class="bold">COVID-19 pandemic</a>: <a
+                                        href="">Disease</a> &#xb7; <a href="">Virus</a> &#xb7; <a href="">By
+                                        location</a> &#xb7;
+                                    <a href="">Impact</a> &#xb7;
+                                    <a href=""> Portal</a></div>
                                 <div id="news-figure">
                                     <img src="assets/lebron.jpg" id="news-img" />
                                     <div class="caption">LeBron James</div>
                                 </div>
 
                                 <ul class="article-list">
-                                    <li>In basketball, the Los Angeles Lakers defeat the Miami Heat to win the NBA
-                                        Finals (MVP LeBron
-                                        James pictured). </li>
-                                    <li>The UN World Food Programme is awarded the Nobel Peace Prize for its efforts to
+                                    <li>In <a href="">basketball</a>, the <a href="">Los Angeles Lakers</a> defeat the
+                                        <a href="">Miami Heat</a> to win <a href="" class="bold">the NBA Finals</a> (<a
+                                            href="">MVP</a> <a href="">LeBron James</a> pictured). </li>
+                                    <li>The UN <a href="" class="bold">World Food Programme</a> is awarded the <a
+                                            href="">Nobel Peace Prize</a> for its efforts to
                                         combat hunger.
                                     </li>
-                                    <li>Poet Louise Glück is awarded the Nobel Prize in Literature.</li>
+                                    <li>Poet <a href="" class="bold">Louise Glück</a> is awarded the <a href="">Nobel
+                                            Prize in Literature</a>.</li>
                                 </ul>
-                                <div id="onging-article-rec-feat" class="article">Ongoing: Belarusian protests &#xb7;
-                                    Kyrgyzstan
-                                    protests
-                                    &#xb7; Nagorno-Karabakh conflict
+                                <div id="onging-article-rec-feat" class="article"><a href="" class="bold">Ongoing:</a>
+                                    <a href="">Belarusian protests</a> &#xb7;
+                                    <a href="">Kyrgyzstan protests</a>
+                                    &#xb7; <a href="">Nagorno-Karabakh conflict</a>
                                 </div>
-                                <div id="recent-article-rec-feat" class="article">Recent deaths: Roberta McCain &#xb7;
-                                    Joe Morgan &#xb7;
-                                    Vijay &#xb7; Jim Dwyer &#xb7; Jimmie Lee Solomon &#xb7; Whitey Ford
+                                <div id="recent-article-rec-feat" class="article"><a href="" class="bold">Recent
+                                        deaths:</a> <a href="">Roberta McCain</a> &#xb7;
+                                    <a href="">Joe Morgan</a> &#xb7;
+                                    <a href="">Vijay</a> &#xb7; <a href="">Jim Dwyer</a> &#xb7; <a href="">Jimmie Lee
+                                        Solomon </a>&#xb7; <a href="">Whitey Ford</a>
                                 </div>
-                                <div class="foot article">Nominate an article</div>
+                                <div class="foot article"><a href="">Nominate an article</a></div>
 
 
                                 <div id="on-this-day" class="article-title">On this day</div>
+                                <div id="date"><a href="">October 13</a></div>
                                 <div id="on-this-day-cont" class="article">
                                     <div id="on-this-day-figure">
                                         <img src="assets/cutter-eagle.jpg" id="on-this-day-img" />
@@ -325,29 +331,36 @@
                                     </div>
 
                                     <ul class="article-list">
-                                        <li>645 – Goguryeo–Tang War: Led by Emperor Taizong, the Tang army was forced to
-                                            abandon a siege of
-                                            Ansi Fortress.</li>
-                                        <li>1814 – War of 1812: After three days of fighting (pictured), the beached
-                                            U.S. Revenue Cutter
-                                            Service vessel Eagle was
-                                            captured by the Royal Navy.</li>
-                                        <li>1972 – Uruguayan Air Force Flight 571 crashed into a remote area in the
+                                        <li><a href="">645</a> – <a href="">Goguryeo–Tang War:</a> Led by <a
+                                                href="">Emperor Taizong</a>, the <a href="">Tang</a> army was forced to
+                                            <a href="" class="bold">abandon a siege</a> of
+                                            <a href="">Ansi Fortress</a>.</li>
+                                        <li><a href="">1814</a> – <a href="">War of 1812</a>: After three days of
+                                            fighting (pictured), the beached
+                                            <a href="">U.S. Revenue Cutter Service</a> vessel Eagle <a href=""
+                                                class="bold">was captured</a> by the <a href="">Royal Navy</a>.</li>
+                                        <li><a href="">1972</a> – <a href="" class="bold">Uruguayan Air Force Flight
+                                                571</a> crashed into a remote area in the
                                             Andes mountains near the
                                             border of Chile and
                                             Argentina; the 16 remaining survivors were not rescued until more than two
                                             months later.</li>
-                                        <li>2013 – During the Hindu festival of Navaratri at a temple in Madhya Pradesh,
+                                        <li><a href="">2013</a> – During the Hindu festival of <a href="">Navaratri</a>
+                                            at a temple in <a href="">Madhya Pradesh</a>,
                                             India, rumours
                                             about an impending bridge
-                                            collapse caused a stampede that resulted in 115 deaths.</li>
+                                            collapse caused <a href="" class="bold">a stampede</a> that resulted in 115
+                                            deaths.</li>
                                     </ul>
-                                    <div>Robert I, Count of Flanders (d. 1093) &#xb7; Leon Leonwood Bean (b. 1872)
-                                        &#xb7; Paul Potts (b.
+                                    <div><a href="" class="bold">Robert I, Count of Flanders</a> (d. 1093) &#xb7; <a
+                                            href="" class="bold">Leon Leonwood Bean</a> (b. 1872)
+                                        &#xb7; <a href="" class="bold">Paul Potts</a> (b.
                                         1970)</div>
-                                    <div>More anniversaries: October 12 &#xb7; October 13 &#xb7; October 14</div>
-                                    <div class="foot article bottom-archive">Archive &#xb7; By email &#xb7; Nominate an
-                                        article</div>
+                                    <div>More anniversaries: <a href="">October 12</a> &#xb7; <a href=""
+                                            class="bold">October 13</a> &#xb7; <a href="">October 14</a></div>
+                                    <div class="foot article bottom-archive"><a href="" class="bold">Archive</a> &#xb7;
+                                        <a href="" class="bold">By email</a> &#xb7; <a href="" class="bold">List of
+                                            historical anniversaries</a></div>
                                 </div>
                             </div>
 
@@ -418,19 +431,25 @@
                             <div id="other-article-title" class="article-title">Other areas of Wikipedia</div>
                             <div class="flex">
                                 <ul class="other-list">
-                                    <li>Community portal – Bulletin board, projects, resources and activities covering a
+                                    <li><a href="" class="bold">Community portal</a> – Bulletin board, projects,
+                                        resources and activities covering a
                                         wide range of
                                         Wikipedia areas.</li>
-                                    <li>Help desk – Ask questions about using Wikipedia.</li>
-                                    <li>Local embassy – For Wikipedia-related communication in languages other than
+                                    <li><a href="" class="bold">Help desk</a> – Ask questions about using Wikipedia.
+                                    </li>
+                                    <li><a href="" class="bold">Local embassy</a> – For Wikipedia-related communication
+                                        in languages other than
                                         English.</li>
-                                    <li>Reference desk – Serving as virtual librarians, Wikipedia volunteers tackle your
+                                    <li><a href="" class="bold">Reference desk</a> – Serving as virtual librarians,
+                                        Wikipedia volunteers tackle your
                                         questions on a
                                         wide range of subjects.</li>
-                                    <li>Site news – Announcements, updates, articles and press releases on Wikipedia and
+                                    <li><a href="" class="bold">Site news</a> – Announcements, updates, articles and
+                                        press releases on Wikipedia and
                                         the Wikimedia
                                         Foundation.</li>
-                                    <li>Village pump – For discussions about Wikipedia itself, including areas for
+                                    <li><a href="" class="bold">Village pump</a> – For discussions about Wikipedia
+                                        itself, including areas for
                                         technical issues and
                                         policies.</li>
                                 </ul>
@@ -438,10 +457,11 @@
                             <div id="sister-article-title" class="article-title">Wikipedia's sister projects</div>
                             <div id="sister-cont">
                                 <div id="sister-article" class="article">
-                                    Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also
+                                    Wikipedia is hosted by the <a href="">Wikimedia Foundation</a>, a non-profit
+                                    organization that also
                                     hosts a range
                                     of
-                                    other projects:
+                                    other <a href="">projects</a>:
                                 </div>
                                 <div id="card-container">
                                     <div class="sister-card">
@@ -550,7 +570,8 @@
                             <div id="lang-article-title" class="article-title">Wikipedia's sister projects</div>
                             <!-- <div id="sister-cont"> -->
                             <div id="lang-article" class="article">
-                                This Wikipedia is written in English. Started in 2001, it currently contains 6,173,012
+                                This Wikipedia is written in <a href="">English</a>. Started in 2001, it currently
+                                contains <a href="">6,173,012</a>
                                 articles. Many
                                 other Wikipedias
                                 are available; some of the largest are listed below.
@@ -558,75 +579,63 @@
 
                             <ul class="other-list">
                                 <li>More than 1,000,000 articles:
-                                    العربية &#xb7; Deutsch &#xb7; Español &#xb7; Français &#xb7; Italiano &#xb7;
-                                    Nederlands &#xb7; 日本語
-                                    &#xb7; Polski &#xb7; Português &#xb7; Русский &#xb7; Svenska &#xb7; Українська
-                                    &#xb7; Tiếng Việt
-                                    &#xb7; 中文</li>
-                                <li>More than 250,000 articles: Bahasa Indonesia &#xb7; Bahasa
-                                    Melayu &#xb7; Bân-lâm-gú &#xb7; Български &#xb7; Català &#xb7; Čeština &#xb7; Dansk
-                                    &#xb7; Esperanto
-                                    &#xb7; Euskara &#xb7; فارسی‎ &#xb7; עברית &#xb7; 한국어 &#xb7; Magyar &#xb7; Norsk
-                                    Bokmål &#xb7; Română &#xb7; Srpski &#xb7; Srpskohrvatski &#xb7; Suomi &#xb7; Türkçe
+                                    <a href="">العربية</a> &#xb7;<a href=""> Deutsch</a> &#xb7; <a href="">Español</a>
+                                    &#xb7; <a href="">Français</a> &#xb7; <a href="">Italiano</a> &#xb7;
+                                    <a href="">Nederlands</a> &#xb7; <a href="">日本語</a>
+                                    &#xb7; <a href="">Polski</a> &#xb7; <a href="">Português</a> &#xb7; <a
+                                        href="">Русский</a> &#xb7; <a href="">Svenska</a> &#xb7; <a
+                                        href="">Українська</a>
+                                    &#xb7; <a href="">Tiếng Việt</a>
+                                    &#xb7; <a href="">中文</a></li>
+                                <li>More than 250,000 articles: <a href="">Bahasa Indonesia</a> &#xb7; <a href="">Bahasa
+                                        Melayu</a> &#xb7; <a href="">Bân-lâm-gú</a> &#xb7; <a href="">Български</a>
+                                    &#xb7; <a href="">Català</a> &#xb7; <a href="">Čeština</a> &#xb7; <a
+                                        href="">Dansk</a>
+                                    &#xb7; <a href="">Esperanto</a>
+                                    &#xb7; <a href="">Euskara</a> &#xb7;<a href=""> فارسی‎ </a>&#xb7;<a href="">
+                                        עברית</a> &#xb7;<a href=""> 한국어 </a>&#xb7; <a href="">Magyar</a> &#xb7; <a
+                                        href="">Norsk</a>
+                                    <a href="">Bokmål</a> &#xb7; <a href="">Română</a> &#xb7; <a href="">Srpski</a>
+                                    &#xb7; <a href="">Srpskohrvatski</a> &#xb7; <a href="">Suomi</a> &#xb7; <a
+                                        href="">Türkçe</a>
                                 </li>
-                                <li>More than 50,000 articles: Asturianu &#xb7; Bosanski &#xb7; Eesti &#xb7; Ελληνικά
-                                    &#xb7; English
-                                    (Simple
-                                    English) &#xb7; Galego &#xb7; Hrvatski &#xb7; Latviešu &#xb7; Lietuvių &#xb7; മലയാളം
+                                <li>More than 50,000 articles: Asturianu &#xb7; <a href="">Bosanski</a> &#xb7; <a
+                                        href=""><a href="">Eesti</a></a> &#xb7; <a href="">Ελληνικά</a>
+                                    &#xb7; <a href="">English (Simple English)</a> &#xb7; <a href="">Galego</a> &#xb7;
+                                    <a href="">Hrvatski</a> &#xb7; <a href="">Latviešu</a> &#xb7; <a
+                                        href="">Lietuvių</a> &#xb7; <a href="">മലയാളം</a>
                                     &#xb7;
-                                    Македонски
-                                    &#xb7; Norsk nynorsk &#xb7; Slovenčina &#xb7; Slovenščina &#xb7; ไทย</li>
+                                    <a href="">Македонски</a>
+                                    &#xb7; <a href="">Norsk nynorsk</a> &#xb7; <a href="">Slovenčina</a> &#xb7; <a
+                                        href="">Slovenščina</a> &#xb7;<a href=""> ไทย</a></li>
                             </ul>
 
                             <div id="complete-list">
                                 <a href=""> Complete list of Wikipedias </a>
                             </div>
                             <!-- </div> -->
-
-
-
-
                         </div>
-
-
-
                     </div>
-
-
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
 
             <div id="footer">
                 <div id="footer-text">
-                    Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may
+                    Text is available under the <a href="">Creative Commons Attribution-ShareAlike License</a>;
+                    additional terms may
                     apply. By
                     using
                     this
-                    site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the
-                    Wikimedia
-                    Foundation, Inc., a non-profit organization.
+                    site, you agree to the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>. Wikipedia® is
+                    a registered trademark of the
+                    <a href="">Wikimedia Foundation, Inc.</a>, a non-profit organization.
                 </div>
                 <div id="footer-policy">
-                    Privacy policy &nbsp; About Wikipedia &nbsp; Disclaimers &nbsp; Contact Wikipedia &nbsp; Mobile view
+                    <a href="">Privacy policy</a> &nbsp; <a href="">About Wikipedia</a> &nbsp; <a
+                        href="">Disclaimers</a> &nbsp; <a href="">Contact Wikipedia</a> &nbsp; <a href="">Mobile
+                        view</a>
                     &nbsp;
-                    Developers &nbsp; Statistics &nbsp; Cookie statement
+                    <a href="">Developers</a> &nbsp; <a href="">Statistics</a> &nbsp; <a href="">Cookie statement</a>
                 </div>
                 <div id="button-cont">
                     <img src="assets/icons/wikimedia-button.png" />
