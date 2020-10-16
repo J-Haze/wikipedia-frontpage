@@ -143,6 +143,11 @@ body {
   display: flex;
 }
 
+#main-logo {
+  width: 160px;
+  background-color: white;
+}
+
 #nav-left {
   width: 160px;
   height: 100%;
@@ -190,11 +195,6 @@ body {
   background-color: white;
 }
 
-#main-logo {
-  width: 160px;
-  background-color: white;
-}
-
 #head {
   position: absolute;
   top: 0;
@@ -221,32 +221,11 @@ body {
   padding: 0 5px;
 }
 
-i {
-  width: 50px;
-}
-
-#search-box {
-  border: none;
-  width: 160px;
-}
-
-.search-icon {
-  width: 5px;
-  color: gray;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 10px;
-}
-
-.search {
-  width: 185px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
-  border: 1px solid gray;
-  border-radius: 2px;
-  height: 20px;
+#user-img {
+  width: 12px;
+  height: 13px;
+  margin-top: 1px;
+  margin-right: 0px;
 }
 
 #nav-top-lower {
@@ -274,6 +253,30 @@ i {
   text-align: center;
   justify-content: center;
   overflow: hidden;
+}
+
+#search-box {
+  border: none;
+  width: 160px;
+}
+
+.search-icon {
+  width: 5px;
+  color: gray;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+}
+
+.search {
+  width: 185px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 1px solid gray;
+  border-radius: 2px;
+  height: 20px;
 }
 
 #main-page {
@@ -326,13 +329,6 @@ i {
   background-image: linear-gradient(to bottom, white 0, #F6F6F6 100%);
 }
 
-#user-img {
-  width: 12px;
-  height: 13px;
-  margin-top: 1px;
-  margin-right: 0px;
-}
-
 #main-content {
   margin: 16px;
 }
@@ -359,17 +355,45 @@ i {
   font-size: 14px;
 }
 
+.article-title {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 8px;
+  padding: 3px 7px;
+  border: 1px solid #ddd;
+}
+
+.article {
+  margin: 0 8px;
+}
+
+.foot {
+  font-weight: bold;
+  text-align: right;
+}
+
+.article-list {
+  list-style-position: outside;
+  margin-left: -10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.caption {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.bottom-archive {
+  margin-bottom: 15px;
+}
+
 #feat-article-cont {
   border: 1px solid #cef2e0;
   background: #f5fffa;
 }
 
 #feat-article-title {
-  background: #cef2e0;
-  border-color: #a3bfb1;
-}
-
-#did-you-know {
   background: #cef2e0;
   border-color: #a3bfb1;
 }
@@ -445,28 +469,9 @@ i {
   margin-bottom: 2px;
 }
 
-.article-title {
-  font-size: 17px;
-  font-weight: bold;
-  margin: 8px;
-  padding: 3px 7px;
-  border: 1px solid #ddd;
-}
-
-.article {
-  margin: 0 8px;
-}
-
-.foot {
-  font-weight: bold;
-  text-align: right;
-}
-
-.article-list {
-  list-style-position: outside;
-  margin-left: -10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+#did-you-know {
+  background: #cef2e0;
+  border-color: #a3bfb1;
 }
 
 #did-you-know-cont {
@@ -481,15 +486,6 @@ i {
 
 #did-you-know-img {
   margin-bottom: 2px;
-}
-
-.caption {
-  font-style: italic;
-  font-size: 12px;
-}
-
-.bottom-archive {
-  margin-bottom: 15px;
 }
 
 #today-articles {

@@ -97,6 +97,13 @@ body {
     display: flex;
 }
 
+//Left Nav
+
+#main-logo{
+    width: 160px;
+    background-color: white;
+}
+
 #nav-left{
     width: 160px;
     height: 100%;
@@ -133,6 +140,8 @@ body {
     text-align: end;
 }
 
+//Content-Right
+
 #content-right{
     min-width: 557.22px;
     width: 100%;
@@ -142,11 +151,6 @@ body {
 border: 1px solid #a7d7f9;
 border-top: none;
 background-color: white;
-}
-
-#main-logo{
-    width: 160px;
-    background-color: white;
 }
 
 #head{
@@ -168,7 +172,6 @@ background-color: white;
 
 .top-links{
     margin-top: 5px;
-
 }
 
 .top-link{
@@ -176,33 +179,14 @@ background-color: white;
     padding: 0 5px;
 }
 
-i {
-    width: 50px;
+#user-img{
+    width: 12px;
+    height: 13px;
+    margin-top: 1px;
+    margin-right: 0px;
 }
 
-#search-box{
-    border: none;
-    width: 160px;
-}
-
-.search-icon{
-    width: 5px;
-    color: gray;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 10px
-}
-
-.search{
-    width: 185px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: 1px solid gray;
-    border-radius: 2px;
-    height: 20px;
-}
+//Top-Lower Nav
 
 #nav-top-lower{
     margin-top: 15px
@@ -229,6 +213,30 @@ i {
     text-align: center;
     justify-content: center;
     overflow: hidden;
+}
+
+#search-box{
+    border: none;
+    width: 160px;
+}
+
+.search-icon{
+    width: 5px;
+    color: gray;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px
+}
+
+.search{
+    width: 185px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 1px solid gray;
+    border-radius: 2px;
+    height: 20px;
 }
 
 #main-page{
@@ -281,16 +289,13 @@ i {
     background-image:linear-gradient(to bottom, white 0, #F6F6F6 100%);
 }
 
-#user-img{
-    width: 12px;
-    height: 13px;
-    margin-top: 1px;
-    margin-right: 0px;
-}
+//Main Content
 
 #main-content{
 margin: 16px;
 }
+
+//Top Banner
 
 #top-banner{
     height: 94px;
@@ -310,9 +315,48 @@ margin: 16px;
     font-size: 13.3px;
 }
 
+// Main Articles
+
 #main-articles{
     font-size: 14px;
 }
+
+//General
+
+.article-title{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 8px;
+    padding: 3px 7px;
+    border: 1px solid #ddd;
+}
+
+.article{
+    margin: 0 8px;
+}
+
+.foot{
+    font-weight: bold;
+    text-align: right;
+}
+
+.article-list{
+list-style-position: outside;
+margin-left: -10px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.caption{
+    font-style: italic;
+    font-size: 12px;
+}
+
+.bottom-archive{
+    margin-bottom: 15px;
+}
+
+//Today's Feature Article
 
 #feat-article-cont{
     border: 1px solid #cef2e0;
@@ -324,14 +368,11 @@ margin: 16px;
     border-color: #a3bfb1;
 }
 
-#did-you-know{
-        background: #cef2e0;
-    border-color: #a3bfb1;
-}
-
 #feat-article-rec-feat{
     text-align: right;
 }
+
+//In the news article
 
 #news-article-cont{
 border: 1px solid #cedff2;
@@ -376,6 +417,7 @@ border: 1px solid #cedff2;
 
 }
 
+//On this day article
 
 #on-this-day{
     background: #cedff2;
@@ -404,28 +446,11 @@ border: 1px solid #cedff2;
 
 }
 
-.article-title{
-    font-size: 17px;
-    font-weight: bold;
-    margin: 8px;
-    padding: 3px 7px;
-    border: 1px solid #ddd;
-}
+//Did you know article
 
-.article{
-    margin: 0 8px;
-}
-
-.foot{
-    font-weight: bold;
-    text-align: right;
-}
-
-.article-list{
-list-style-position: outside;
-margin-left: -10px;
-margin-top: 5px;
-margin-bottom: 5px;
+#did-you-know{
+    background: #cef2e0;
+    border-color: #a3bfb1;
 }
 
 #did-you-know-cont{
@@ -443,14 +468,7 @@ margin-bottom: 5px;
 
 }
 
-.caption{
-    font-style: italic;
-    font-size: 12px;
-}
-
-.bottom-archive{
-    margin-bottom: 15px;
-}
+//Today's featured picture section
 
 #today-articles{
     font-size: 14px;
@@ -499,10 +517,11 @@ margin-bottom: 5px;
     text-align: right;
 }
 
+//Other areas of Wikipedia section
+
 #other-articles{
     font-size: 14px;
 }
-
 
 #other-article-cont{
     border: 1px solid #e2e2e2;;
@@ -533,13 +552,14 @@ margin-bottom: 5px;
     text-align: right;
 }
 
-
 .other-list{
-list-style-position: outside;
-margin-left: -10px;
-margin-top: 5px;
-margin-bottom: 5px;
+    list-style-position: outside;
+    margin-left: -10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
+//Sister projects section
 
 #sister-article-title{
     background: #eee;
@@ -580,10 +600,11 @@ margin-bottom: 5px;
     margin: 6px 4px;
 }
 
-
 #flower-img{
     width: 35px;
 }
+
+//Wikipedia Languages section
 
 #lang-article-title{
     background: #eee;
@@ -600,6 +621,8 @@ margin-bottom: 5px;
     font-weight: bold;
     margin-bottom: 8px;
 }
+
+//Footer
 
 #footer{
     margin-top: 15px;
