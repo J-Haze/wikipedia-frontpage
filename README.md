@@ -10,7 +10,7 @@ Create a flexible CSS framework and use it to replicate the frontpage of Wikiped
 
 * HTML
 * CSS
-* SCSS
+* SCSS 
 
 ### Picture: ###
 
